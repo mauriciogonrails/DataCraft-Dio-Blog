@@ -1,27 +1,138 @@
-# AngularBlog
+# Data Craft
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Data Craft is an Angular-based web application focused on data science, machine learning metrics, and open-source project management in the data domain. This application serves as a knowledge base and resource center for data professionals.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Development](#development)
+- [Building for Production](#building-for-production)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Data Craft is a comprehensive platform that provides articles, tutorials, and resources focusing on machine learning model evaluation, open-source data projects, and probability calibration techniques. The application is built using Angular and TypeScript, with responsive design principles to ensure a seamless experience across devices.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Article Repository**: Collection of in-depth articles on data science topics
+- **Machine Learning Metrics Guide**: Detailed explanations of metrics for model evaluation
+- **Open-Source Project Management**: Resources on maintaining open-source data projects
+- **Probability Calibration Tools**: Guides for calibrating probabilities in ML models
+- **Responsive Design**: Mobile-friendly interface that adapts to different screen sizes
+- **Multi-language Support**: Content available in multiple languages including Portuguese
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Frontend Framework**: Angular 14+
+- **Language**: TypeScript 4.9+
+- **Styling**: SCSS/CSS with responsive design
+- **UI Components**: Angular Material
+- **Testing**: Jasmine & Karma
+- **Linting**: ESLint
+- **Build Tools**: Angular CLI
+- **Package Manager**: npm
 
-## Running end-to-end tests
+## Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+data-craft/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── article/
+│   │   │   ├── metrics/
+│   │   │   ├── open-source/
+│   │   │   └── probability/
+│   │   ├── services/
+│   │   ├── models/
+│   │   ├── shared/
+│   │   └── app.module.ts
+│   ├── assets/
+│   │   ├── images/
+│   │   └── i18n/
+│   ├── environments/
+│   ├── styles/
+│   └── index.html
+├── .angular.json
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-## Further help
+## Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get started with Data Craft, follow these installation steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/mauriciogonrails/data-craft.git
+
+# Navigate to the project directory
+cd data-craft
+
+# Install dependencies
+npm install
+```
+
+## Development
+
+To start the development server:
+
+```bash
+ng serve
+```
+
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+### Development Commands
+
+- `ng generate component component-name` - Generate a new component
+- `ng add @angular/material` - Add Angular Material
+- `ng generate service service-name` - Generate a new service
+- `ng generate module module-name` - Generate a new module
+
+## Building for Production
+
+Run the following command to build the project for production:
+
+```bash
+ng build --prod
+```
+
+The build artifacts will be stored in the `dist/` directory.
+
+## Testing
+
+### Running Unit Tests
+
+```bash
+ng test
+```
+
+### Running End-to-End Tests
+
+```bash
+ng e2e
+```
+
+## Contributing
+
+Contributions to Data Craft are welcome. Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
